@@ -28,6 +28,14 @@ public class Player {
 		}
 	}
 
+	public void showStatus() {
+		System.out.println("player");
+		System.out.println("point: " + playerPoint);
+		for (Card card : handCards) {
+			card.showStatus();
+		}
+	}
+
 	public List<Card> getHandCards() {
 		return handCards;
 	}

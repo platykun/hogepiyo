@@ -13,6 +13,15 @@ public class Game {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
 		for (int i = 0; i < 5; i++) {
+			System.out.println("プレイヤー");
+			player.showStatus();
+			System.out.println("敵");
+			enemy.showStatus();
+
+			System.out.println();
+			System.out.println("select 0 to " + (4 - i));
+			System.out.println();
+
 			try {
 				int input = Integer.parseInt(br.readLine());
 				Card playerCard = player.putCard(input);
@@ -30,6 +39,12 @@ public class Game {
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
+		}
+
+		if (player.getPlayerPoint() > enemy.getPlayerPoint()) {
+			System.out.println("you win");
+		} else {
+			System.out.println("you lose");
 		}
 
 	}

@@ -25,6 +25,11 @@ public class Card {
 		setPower(power);
 	}
 
+	public void showStatus() {
+		System.out.println("rank: " + rank);
+		System.out.println("power: " + power);
+	}
+
 	public int getRank() {
 		return rank;
 	}

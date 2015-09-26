@@ -32,6 +32,10 @@ public class Player {
 		return handCards;
 	}
 
+	public void addPlayerPoint(int addPoint) {
+		this.playerPoint += addPoint;
+	}
+
 	public void setHandCards(List<Card> handCards) {
 		this.handCards = handCards;
 	}

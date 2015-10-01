@@ -3,7 +3,7 @@ package hogepiyo;
 /**
  * カードオブジェクト
  *
- * @author Platykun
+ * @author platykun
  *
  */
 public class Card {
